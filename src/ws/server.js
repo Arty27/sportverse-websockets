@@ -1,4 +1,4 @@
-import { WebSocketServer } from "ws";
+import { WebSocket, WebSocketServer } from "ws";
 
 function sendJson(socket, payload) {
   if (socket.readyState !== WebSocket.OPEN) return;
